@@ -13,9 +13,9 @@ The project uses the following versions:
 
 The project can be cloned and built in Android Studio.
 
-My goals in developing this app were to hit every requirement and showcase my knowledge as an Android developer, by using some Jetpack and third-party libraries, all while writing clean code, with a solid backing arhictecture with Unit Tests.
+My goals in developing this app were to hit every requirement and showcase my knowledge as an Android developer, by using some Jetpack and third-party libraries, all while writing clean code, with a solid backing architecture with Unit Tests.
 
-On opening the app, you'll be presented with a list of photos and their respective title. Clicking a list item opens a new screen and displays the photo in a higher resolution and displays some details.
+On opening the app, you'll be presented with a list of photos and their respective titles. Clicking a list item opens a new screen and displays the photo in a higher resolution and displays some details.
 
 The photo details are all stored in the Room database which is treated like a local cache. When the app is first launched all data in Room is cleared before making a GET request which then populates Room with the new data.
 

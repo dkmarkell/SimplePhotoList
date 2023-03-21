@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RakutenTakeHome</string>
+    <string name="title_default">Title</string>
+    <string name="quick_return">Quick return!</string>
+    <string name="title_label">Title:</string>
+    <string name="server_label">Server:</string>
+    <string name="owner_label">Owner:</string>
+    <string name="farm_label">Farm:</string>
+    <string name="photo_id_label">Photo ID:</string>
+    <string name="public_label">Public:</string>
+    <string name="friend_label">Friend:</string>
+    <string name="family_label">Family:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="network_error">Something went wrong trying to get the photos!</string>
+</resources>

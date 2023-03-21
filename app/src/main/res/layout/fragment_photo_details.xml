@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".photo.details.PhotoDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/photo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:src="@drawable/ic_launcher_foreground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_label"
+                android:text="@string/title_label"
+                android:layout_marginStart="@dimen/screen_padding_8dp"
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginTop="@dimen/detail_label_padding_top_8dp"
+                app:layout_constraintTop_toBottomOf="@id/photo"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_text"
+                android:layout_marginEnd="@dimen/screen_padding_8dp"
+                tools:text="title..."
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginStart="@dimen/detail_label_padding_start_4dp"
+                app:layout_constraintStart_toEndOf="@id/title_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/title_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/owner_label"
+                android:text="@string/owner_label"
+                android:layout_marginStart="@dimen/screen_padding_8dp"
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginTop="@dimen/detail_label_padding_top_8dp"
+                app:layout_constraintTop_toBottomOf="@id/title_text"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/owner_text"
+                android:layout_marginEnd="@dimen/screen_padding_8dp"
+                tools:text="Owner..."
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginStart="@dimen/detail_label_padding_start_4dp"
+                app:layout_constraintStart_toEndOf="@id/owner_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/owner_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/server_label"
+                android:text="@string/server_label"
+                android:layout_marginStart="@dimen/screen_padding_8dp"
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginTop="@dimen/detail_label_padding_top_8dp"
+                app:layout_constraintTop_toBottomOf="@id/owner_text"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/server_text"
+                android:layout_marginEnd="@dimen/screen_padding_8dp"
+                tools:text="server..."
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginStart="@dimen/detail_label_padding_start_4dp"
+                app:layout_constraintStart_toEndOf="@id/server_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/server_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/farm_label"
+                android:text="@string/farm_label"
+                android:layout_marginStart="@dimen/screen_padding_8dp"
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginTop="@dimen/detail_label_padding_top_8dp"
+                app:layout_constraintTop_toBottomOf="@id/server_text"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/farm_text"
+                android:layout_marginEnd="@dimen/screen_padding_8dp"
+                tools:text="farm..."
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginStart="@dimen/detail_label_padding_start_4dp"
+                app:layout_constraintStart_toEndOf="@id/farm_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/farm_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/photo_id_label"
+                android:text="@string/photo_id_label"
+                android:layout_marginStart="@dimen/screen_padding_8dp"
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginTop="@dimen/detail_label_padding_top_8dp"
+                app:layout_constraintTop_toBottomOf="@id/farm_text"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/photo_id_text"
+                android:layout_marginEnd="@dimen/screen_padding_8dp"
+                tools:text="id..."
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginStart="@dimen/detail_label_padding_start_4dp"
+                app:layout_constraintStart_toEndOf="@id/photo_id_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/photo_id_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/public_label"
+                android:text="@string/public_label"
+                android:layout_marginStart="@dimen/screen_padding_8dp"
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginTop="@dimen/detail_label_padding_top_8dp"
+                app:layout_constraintTop_toBottomOf="@id/photo_id_text"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/public_text"
+                android:layout_marginEnd="@dimen/screen_padding_8dp"
+                tools:text="public..."
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginStart="@dimen/detail_label_padding_start_4dp"
+                app:layout_constraintStart_toEndOf="@id/public_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/public_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/friend_label"
+                android:text="@string/friend_label"
+                android:layout_marginStart="@dimen/screen_padding_8dp"
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginTop="@dimen/detail_label_padding_top_8dp"
+                app:layout_constraintTop_toBottomOf="@id/public_text"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/friend_text"
+                android:layout_marginEnd="@dimen/screen_padding_8dp"
+                tools:text="friend..."
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginStart="@dimen/detail_label_padding_start_4dp"
+                app:layout_constraintStart_toEndOf="@id/friend_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/friend_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/family_label"
+                android:text="@string/family_label"
+                android:layout_marginStart="@dimen/screen_padding_8dp"
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginTop="@dimen/detail_label_padding_top_8dp"
+                app:layout_constraintTop_toBottomOf="@id/friend_text"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/family_text"
+                android:layout_marginEnd="@dimen/screen_padding_8dp"
+                tools:text="family..."
+                android:textSize="@dimen/detail_text_size_16sp"
+                android:layout_marginStart="@dimen/detail_label_padding_start_4dp"
+                app:layout_constraintStart_toEndOf="@id/family_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/family_label"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

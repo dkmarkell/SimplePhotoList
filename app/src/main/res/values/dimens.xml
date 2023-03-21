@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding_8dp">8dp</dimen>
+    <dimen name="photo_preview_padding_4dp">4dp</dimen>
+    <dimen name="detail_label_padding_top_8dp">8dp</dimen>
+    <dimen name="detail_label_padding_start_4dp">4dp</dimen>
+    <dimen name="detail_text_size_16sp">16sp</dimen>
+    <dimen name="preview_text_size_16sp">16sp</dimen>
+    <dimen name="quick_return_vertical_padding_12dp">12dp</dimen>
+</resources>
